@@ -14,9 +14,9 @@
 [Script]
 cron "5 6-18/6 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_fruit.js,tag=东东农场
 =========================Surge============================
-东东农场 = type=cron,cronexp="5 6-18/6 * * *",wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_fruit.js
+东东农场 = type=cron,cronexp="5 6-18/6 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_fruit.js
 =========================小火箭===========================
-东东农场 = type=cron,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_fruit.js, cronexpr="5 6-18/6 * * *", timeout=200, enable=true
+东东农场 = type=cron,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_fruit.js, cronexpr="5 6-18/6 * * *", timeout=3600, enable=true
 jd免费水果 搬的https://github.com/liuxiaoyucc/jd-helper/blob/a6f275d9785748014fc6cca821e58427162e9336/fruit/fruit.js
 */
 const $ = new Env('东东农场');
@@ -26,9 +26,7 @@ let cookiesArr = [], cookie = '', jdFruitShareArr = [], isBox = false, notify, n
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // 这个列表填入你要助力的好友的shareCode
    //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
-  '7e2358b09f1145eca9163241337c9e8c@be46ce5f2f714028a7b28991047d23f5@53c954f41a0440c197d1190d4fc1c729@89bf726253ae442f8ff455f11a7e4340',
-  //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
-  '7e2358b09f1145eca9163241337c9e8c@be46ce5f2f714028a7b28991047d23f5@53c954f41a0440c197d1190d4fc1c729@89bf726253ae442f8ff455f11a7e4340',
+    ''
 ]
 let message = '', subTitle = '', option = {}, isFruitFinished = false;
 const retainWater = 100;//保留水滴大于多少g,默认100g;
