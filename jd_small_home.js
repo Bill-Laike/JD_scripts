@@ -1,6 +1,6 @@
 /*
- * @Author: lxk0301 https://github.com/lxk0301
- * @Date: 2020-11-12 11:42:12
+ * @Author: lxk0301 https://github.com/lxk0301 
+ * @Date: 2020-11-12 11:42:12 
  * @Last Modified by: lxk0301
  * @Last Modified time: 2021-1-4 14:27:20
  */
@@ -105,12 +105,12 @@ const JD_API_HOST = 'https://lkyl.dianpusoft.cn/api';
     }
   }
 })()
-  .catch((e) => {
-    $.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '')
-  })
-  .finally(() => {
-    $.done();
-  })
+    .catch((e) => {
+      $.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '')
+    })
+    .finally(() => {
+      $.done();
+    })
 async function smallHome() {
   await loginHome();
   await ssjjRooms();
